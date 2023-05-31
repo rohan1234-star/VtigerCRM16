@@ -1,0 +1,206 @@
+Q.When we will go for Automation?
+>When new build arises to the market,we go for regression testing i.e Automation.
+>When time makes sense(less time consuming).
+>When cost makes sense(only initial investment is there).
+>When we have to perform repeatative task.
+==============================================================================
+
+Q.What is Automation?
+>Process of converting test cases into test script with the help of automation tools.
+==============================================================================
+Q.What is Selenium?
+>It is a test automation tool used to test ONLY web and mobile application(can't automate standalone).
+===============================================================================
+Q.What is Test Script?
+>It is a code/progarm which is written against manual test cases.
+===============================================================================
+*.Advantages.*
+~~~~~~~~~~
+-Open source
+-free to download
+-Supports multiple browser
+-Supports multiple programming languages
+-Supports multiple OS
+================================================================================
+*.Limitations/Drawbacks/Disadvantages.*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-Can't automate standalone application
+-Not going to get immediate support
+-Can't automate capcha,voice signals,video,audio signals,network errors
+================================================================================
+
+*Difference between selenium and QTP(Quick Test Professional):
+
+1.You can automate only web & mob appla.
+You can automate all type of appl.
+
+2.Supports multiple operating system.
+Supports only one ie.Windows.
+
+3.Supports for multiple programming lang.
+Supports VB(visual basic scripts.)
+
+4.Selenium is open source.
+It is an licensed tool.
+===============================================================================
+
+****Architecture of Selenium WebDriver***
+
+Four Interfaces- SearchContext, TakesScreenshot, WelDriver, JavascriptExecutor.
+
+
+1.SearchContext- 2 methods*
+~~~~~~~~~~~~~~~~~~~~
+
+It is an interface which is used to search the TE on the web page.
+
+-Perform actions on TE.
+
+-findElement( ) - Used to find single element.- Return type is web element
+
+-find Elements( )-Used to find multiple element.- list of web elements.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.TakesScreenshot-1 method*
+~~~~~~~~~~~~~~~~~~~~
+
+-you can take screenshot of web page or one single element.
+
+-getScreenshotAs( )
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.JavascriptExecutor-2 methods*
+~~~~~~~~~~~~~~~~~~~~~~
+
+-To perform scroll operation
+-To perform action on disabled text fields.
+
+-executeScript( )
+-executeSynchronisedScript( )
+--------------------------------------------------------------------------------------------------------------------------------------------------
+4.WebDriver-11 methods*
+~~~~~~~~~~~~~~~~~~
+
+-It is used to control your browser.
+
+1.get( )
+2.getTitle( )
+3.getCurrentUrl( )
+4.getPageSource( )
+5.close( )
+6.quit( )
+7.getWindowHandle( )
+8.getWindowHandles( )
+9.navigate( )
+10.manual( )
+11.switchTo( )
+============================================================================
+
+
+
+***10.Manage( )****
+
+1.window related operation
+~~~~~~~~~~~~~~~~~~~
+a.maximize( )
+b.minimize( )
+c.fullscreen( )
+d.getSize( )
+e.setSize( )
+f.getPosition( )
+g.setPosition( )
+------------------------------------------------------------------------------------------------------------------------------------------------
+2.timeout related operation
+~~~~~~~~~~~~~~~~~~~
+------------------------------------------------------------------------------------------------------------------------------------------------
+3.cookies related operation
+~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+***9.navigate( )****
+>It is used to navigate the browser from one page to another.
+
+1.back( )
+2.forward( )
+3.refresh( )
+4.to(string url)
+===============================================================================
+
+***1.get( )****
+>it is used to navigate the browser to the url which is passed in the parenthesis (it is passed as String)
+===============================================================================
+
+
+***2.getTitle( )****
+>It is used to get the page title of the current running webpages.
+===============================================================================
+
+***3.getCurrentUrl( )****
+>It is used to get the current URL of the webpage running on the browser.
+===============================================================================
+
+
+***4.getPageSource( )****
+>it is used to get the html structure of the webpage
+================================================================================
+
+
+***7.getWindowHandle( )****
+>It is used to get current window ID.
+================================================================================
+
+***8.getWindowHandles( )****
+>It is used to get both the ID of parent window as well as child window.
+=================================================================================
+
+***5.close( )****
+>It close only Parent window.
+>it only close browser but it is running in background.
+=================================================================================
+
+***6.quit()****
+>It close both parent and child window.
+>It close browser and stop server.
+=================================================================================
+
+***11.switchTo( )****
+=================================================================================
+
+***how to find source code of complete webpage***
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+case1>right click->inspect
+case2>control+shift+i
+=================================================================================
+
+***how to find source code of single element***
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+case1>keep the mouse on targeted element->right click->inspect
+case2>ctrl+shift+i -> click on the top lest icon(mouse pointer) and drag and drop it on the targeted element
+=================================================================================
+
+****Action Class Methods****
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1.Click()
+2.Click(WebElement target)
+3.Context Click()
+4.ContextClick(WebElement target)
+5.Double click()
+6.Double click(WebElement target)
+7.movetoElement(WebElement target)
+8.Sendkeys(charsquence)
+9.Sendkeys(WT,charsequence)
+10.MoveToElement(WebElement target,xoffset.yoffset)
+11.MoveByOffset()
+12.click&hold()
+13.click&hold(WT)
+14.release()
+!5.release(WT)
+16.Drag&drop()
+17.Drag&DropBY()
+18.KeyUP()
+19.KeyDown()
+20.build()
+21.perform()
